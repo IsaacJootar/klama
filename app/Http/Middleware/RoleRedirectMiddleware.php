@@ -41,6 +41,10 @@ class RoleRedirectMiddleware
                 'prefix' => 'general', // GM users should go to general.general-dashboard route
                 'index' => 'general-dashboard', // same idea as index above
             ],
+            'DIR' => [
+                'prefix' => 'general', // Director follows general module guard rules
+                'index' => 'general-dashboard',
+            ],
         ];
 
         // Get the user's role (access the 'aka' field from the related UserRole model)
@@ -65,3 +69,4 @@ class RoleRedirectMiddleware
         return $next($request);
     }
 }
+

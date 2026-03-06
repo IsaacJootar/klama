@@ -12,76 +12,67 @@ use Illuminate\Validation\ValidationException;
 use Illuminate\Support\Facades\Session;
 
 #[Title('User Login')]
-
-
 class LoginUser extends Component
 {
-
     public $email;
     public $password;
+
     public function render()
     {
         return view('livewire.login-user')->layout('layouts.auth-register');
     }
 
-
     public function loginUser()
     {
-
         $this->ensureIsNotRateLimited();
-        $validated =  $this->validate([
-            'email' => 'required|email|max:200',
-            'password' => 'required'
 
+        $validated = $this->validate([
+            'email' => 'required|string|max:200',
+            'password' => 'required',
         ]);
 
+        $identifier = trim($validated['email']);
+        $credentials = ['password' => $validated['password']];
+        $credentials[filter_var($identifier, FILTER_VALIDATE_EMAIL) ? 'email' : 'name'] = $identifier;
 
-
-        if (Auth::attempt($validated)) {
-            Session::regenerate();
-
-
-            $user = Auth::user();
-
-            // Eager load the role relationship
-            $user->load('userRoles');  // This will load the related UserRole
-            $role = $user->userRoles->aka;
-            // Define role-based redirect paths (index to your module route)
-            $roleRoutes = [
-                'FD' => 'reservations', // for reservations
-                'LM' => 'activity-log', // for logistics manager
-                'GM' => 'general-dashboard', // for general manager
-                'MM' => 'main-dashboard', // for maintenance manager
-                'KR' => 'dashboard', // for general manager
-                'HK' => 'house-dashboard', // for general manager
-                'SM' => 'sales-dashboard', // for general manager
-            ];
-
-
-
-
-            if ($role && isset($roleRoutes[$role])) {
-                toastr()->info('You are successfully logged in as ' .$user->userRoles->role);
-                $this->redirectIntended(default: route($roleRoutes[$role], absolute: false), navigate: true);
-            }
-        }
-
-
-
-        if (! Auth::attempt($this->only(['email', 'password']))) {
+        if (!Auth::attempt($credentials)) {
             RateLimiter::hit($this->throttleKey());
 
             throw ValidationException::withMessages([
                 'message' => 'The Email, Password provided does not match our record ',
             ]);
         }
-        RateLimiter::clear($this->throttleKey());
-    }
 
+        Session::regenerate();
+        RateLimiter::clear($this->throttleKey());
+
+        $user = Auth::user();
+        $user->load('userRoles');
+
+        $role = optional($user->userRoles)->aka;
+        $roleLabel = optional($user->userRoles)->role ?? 'User';
+
+        $roleRoutes = [
+            'FD' => 'reservations',
+            'LM' => 'activity-log',
+            'GM' => 'general-dashboard',
+            'MM' => 'main-dashboard',
+            'KR' => 'dashboard',
+            'HK' => 'house-dashboard',
+            'SM' => 'sales-dashboard',
+            'DIR' => 'general-dashboard',
+        ];
+
+        $targetRoute = $roleRoutes[$role] ?? 'dashboard';
+
+        toastr()->info('You are successfully logged in as ' . $roleLabel);
+
+        return $this->redirectIntended(default: route($targetRoute, absolute: false), navigate: true);
+    }
 
     protected function ensureIsNotRateLimited(): void
     {
-        if (! RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
+        if (!RateLimiter::tooManyAttempts($this->throttleKey(), 5)) {
             return;
         }
 
@@ -97,9 +88,6 @@ class LoginUser extends Component
         ]);
     }
 
-    /**
-     * Get the authentication rate limiting throttle key.
-     */
     protected function throttleKey(): string
     {
         return Str::transliterate(Str::lower($this->email) . '|' . request()->ip());
