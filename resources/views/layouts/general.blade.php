@@ -19,7 +19,10 @@
         <link rel="stylesheet" href="{{ asset('assets/vendor/fonts/tabler-icons.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendor/fonts/flag-icons.css') }}" />
         <!-- Core CSS -->
+<<<<<<< HEAD
         
+=======
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
         <link rel="stylesheet" href="{{ asset('assets/vendor/css/rtl/core.css') }}" class="template-customizer-core-css" />
         <link rel="stylesheet" href="{{ asset('assets/vendor/css/rtl/theme-default.css') }}" class="template-customizer-theme-css" />
         <link rel="stylesheet" href="{{ asset('assets/css/demo.css') }}" />
@@ -55,6 +58,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
         <!-- Helpers -->
         <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
+<<<<<<< HEAD
         
            <!-- Cdn Files for datatables Starts  -->
         <link href="https://cdn.datatables.net/v/bs5/jszip-3.10.1/dt-2.2.2/b-3.2.2/b-html5-3.2.2/b-print-3.2.2/r-3.0.4/datatables.min.css" rel="stylesheet" integrity="sha384-Lyca+jsk9Q+XLYmuTBriITsVJpOxGXNqWAWFFT5SdYRiDsUSGoaekwOTIO9kgfem" crossorigin="anonymous">
@@ -66,6 +70,8 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+=======
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 
         <!-- Config -->
         <script src="{{ asset('assets/js/config.js') }}"></script>
@@ -75,7 +81,10 @@
         @endphp
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+<<<<<<< HEAD
         @filepondScripts
+=======
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
     </head>
     <body>
         <!-- Layout wrapper -->
@@ -189,6 +198,7 @@
     <!-- Page JS -->
     <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
     @livewireScripts
+<<<<<<< HEAD
      <!-- JS  for datatables Starts  -->
     <script>
         new DataTable('#myTable', {
@@ -201,5 +211,7 @@
 
         </script>
              <!-- JS  for datatables Ends -->
+=======
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 </body>
 </html>

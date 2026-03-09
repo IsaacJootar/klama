@@ -17,7 +17,11 @@
   <form onSubmit="return false">
    @csrf
             <label for="selectRoom" class="form-label">Select Room</label>
+<<<<<<< HEAD
                 <select wire:model="room_id"  class="form-select form-select-lg" data-allow-clear="true">
+=======
+                <select wire:model="room_id"    id="selectpickerBasic"    class="form-select form-select-lg" data-allow-clear="true">
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                     <option value="">--Select Room--</option>
                     @foreach ($rooms as $room)
 

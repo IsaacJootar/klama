@@ -84,6 +84,7 @@
     </div>
 
 <!-- view Report Modal -->
+jdkskldle
 <div  wire:ignore.self  class="modal fade" data-bs-focus="false" id="report" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered1 modal-simple modal-add-new-cc">
       <div class="modal-content">

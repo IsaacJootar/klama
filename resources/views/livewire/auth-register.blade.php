@@ -14,7 +14,12 @@
              <!-- Logo -->
              <div class="app-brand justify-content-center mb-6">
                <a href="#" class="app-brand-link">
+<<<<<<< HEAD
                 
+=======
+                 <span class="app-brand-logo demo">
+
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
    </span>
                  <span class="app-brand-text demo text-heading fw-bold">VINE INT'L SUITES, ABUJA </span>
                </a>

@@ -50,7 +50,9 @@ class CreateRoomAllocation  extends Component
         if (Roomallocation::where('room_id', $this->room_id)
             ->where('category_id', $this->category_id)
             ->exists()
-        ) {
+        )
+
+        {
 
             throw ValidationException::withMessages(['message' => ['This room & category  is already allocated']]);
         }

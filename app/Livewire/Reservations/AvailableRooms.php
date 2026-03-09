@@ -9,7 +9,7 @@ use App\Models\Roomcategory;
 use App\Models\Roomallocation;
 use Livewire\Attributes\Title;
 
-#[Title('Reservations | Available Roooms')]
+#[Title('Reservations | Available Rooms')]
 class AvailableRooms extends Component
 {
     public $checkin;

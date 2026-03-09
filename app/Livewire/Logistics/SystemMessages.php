@@ -4,10 +4,13 @@ namespace App\Livewire\Logistics;
 use Livewire\Component;
 use App\Models\SystemMessage;
 use Livewire\Attributes\Title;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\ValidationException;
 use Livewire\Attributes\Validate;
 use Illuminate\Support\Facades\Auth;
+=======
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 use App\Services\EmailMessageService;
 use Illuminate\Support\Facades\DB;
 
@@ -27,11 +30,6 @@ class SystemMessages extends Component
     public $message_id; // give me a random numberto identify each message
 
     public $section = 'Logistics'; //Hotel Section,like depart
-
-
-    protected $rules = [
-        'message' => 'required|min:10',
-    ];
 
 
 
@@ -72,6 +70,7 @@ class SystemMessages extends Component
         ->where('role', 'General_Manager')
         ->value('user_id');
 
+<<<<<<< HEAD
     $system_message = app(EmailMessageService::class); // inject the dependency class
     $system_message->SendMessageAndCreateRecord(
         $this->message,
@@ -87,6 +86,13 @@ class SystemMessages extends Component
 }
 
 
+=======
+        toastr()->info('Email Has Been Sent Successfuly');
+        $this->reset();
+
+
+    }
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
     public function render()
     {
         $this->messages = SystemMessage::all();

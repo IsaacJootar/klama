@@ -52,7 +52,11 @@
                                  <td>{{Str::ucfirst($room = \App\Models\Room::where('id', $reservation->room_id)->value('name'))}}
                                 </td>
 
+<<<<<<< HEAD
                                 <td>{{str::ucfirst($room = \App\Models\Roomcategory::where('id', $reservation->category_id)->value('category'))}}
+=======
+                                <td>{{str::ucfirst($room = \App\Models\RoomCategory::where('id', $reservation->category_id)->value('category'))}}
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                                 </td>
                                 <td>    {{$reservation->checkin}}</td>
                                 <td>    {{$reservation->checkout}}</td>

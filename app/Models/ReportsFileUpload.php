@@ -10,6 +10,7 @@ class ReportsFileUpload extends Model
     protected $table = "reports_upload_files";
     protected $fillable = [
         'report_id', // secondary key from individual reports table
+        'user_id',
         'file_name',
         'path',
         'mime_type',

@@ -5,7 +5,6 @@ use Carbon\Carbon;
 use Livewire\Component;
 use App\Models\Roomallocation;
 use Livewire\Attributes\Title;
-use Illuminate\Validation\ValidationException;
 
 
 #[Title('Reservations | Room Search')]

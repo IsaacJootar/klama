@@ -10,7 +10,11 @@
            <x-input-error-messages/>
              <!--/ page-label component -->
          <div>
+<<<<<<< HEAD
              <x-home-page-label>These  are reserved room(s) for the current month of {{Carbon::now()->format('F, Y') }} </x-home-page-label>
+=======
+             <x-home-page-label>These  are reserved room(s) as at today {{Carbon::parse($checkin)->format('l jS \ F Y')}}</x-home-page-label>
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
          </div>
           <!--/ action button component -->
 
@@ -23,6 +27,7 @@
          <div class="card">
  
  <div class="table-responsive text-nowrap">
+<<<<<<< HEAD
      <table id="myTable" class="table">
             <thead class="table-light">
                 <tr>
@@ -93,6 +98,80 @@
                 @endforeach
             </tbody>
         </table>
+=======
+     <table class="table">
+       <thead class="table-light">
+
+                         <tr>
+                             <th>SN</th>
+                             <th>Room</th>
+                             <th>Category</th>
+                             <th>Reservation ID</th>
+                             <th>Customer</th>
+                              <th>Checkin</th>
+                                <th>CheckOut</th>
+                             <th>Value</th>
+
+                               <th>Payment Medium</th>
+                              <th>Status</th>
+
+                                <th>Adress</th>
+                                 <th>Phone</th>
+                                  <th>Email</th>
+
+                           <th>Created time</th>
+                           <th>Payment Status</th>
+                           <th>Action</th>
+
+                         </tr>
+                     </thead>
+                         <tbody class="table-border-bottom-0">
+                             @foreach ($reserved as $reserve)
+
+
+                             <tr wire:key='{{$reserve->id}}'>
+
+                                 <td>{{$loop->index + 1}}</td>
+                                 <td>{{Str::ucfirst($room = \App\Models\Room::where('id', $reserve->room_id)->value('name'))}}
+                                </td>
+
+                                <td>{{str::ucfirst($room = \App\Models\Roomcategory::where('id', $reserve->category_id)->value('category'))}}
+                                </td>
+                                <td>    {{$reserve->reservation_id}}</td>
+                                <td>   {{$reserve->fullname}}</td>
+                                <td>    {{$reserve->checkin}}</td>
+                                <td>    {{$reserve->checkout}}</td>
+                                <td>    {{Helper::format_currency(\App\Models\Roomallocation::where('room_id', $reserve->room_id)->value('price'))}}</td>
+
+                                <td>    {{$reserve->medium}}</td>
+                                <td><span class="badge bg-label-primary me-1">Reserved</span></td>
+
+                                <td>   {{$reserve->adress}}</td>
+                                <td>   {{$reserve->phone}}</td>
+                                <td>   {{$reserve->email}}</td>
+                                <td>    {{$reserve->created_at}}</td>
+                                 <td>{{Helper::get_reservation_payment_status($reserve->reservation_id)}}</td>
+                                 <td>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow"
+                                            data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a data-bs-toggle="modal" data-bs-target="#roombooked" class="dropdown-item" href="javascript:void(0);"><i
+                                            class="ti ti-receipt me-1"></i> View Receipt</a>
+                                            <a wire:click="confirmPayment('{{ $reserve->reservation_id }}', '{{ $reserve->email }}')"
+                                                wire:confirm="Are you sure you want to proceed and confirm payment?"
+                                                class="dropdown-item" href="javascript:void(0);">
+                                                <i class="ti ti-check me-1"></i> Confirm this Payment
+                                             </a>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                 </tr>
+                             @endforeach
+                         </tbody>
+                     </table>
+>>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                  </div>
            
            
