@@ -69,11 +69,7 @@
         @endphp
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
-<<<<<<< HEAD
         @filepondScripts
-=======
-
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 
     </head>
     <body>

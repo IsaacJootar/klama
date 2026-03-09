@@ -1,14 +1,7 @@
 <!-- Navbar -->
 
-<<<<<<< HEAD
 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
 
-=======
-<!-- Navbar -->
-
-<nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
-
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0   d-xl-none ">
       <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
         <i class="ti ti-menu-2 ti-md"></i>
@@ -18,10 +11,6 @@
 
     <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
 
-<<<<<<< HEAD
-=======
-
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
       <!-- Search -->
       <div class="navbar-nav align-items-center">
         <div class="nav-item navbar-search-wrapper mb-0">
@@ -35,7 +24,6 @@
 
 
 
-<<<<<<< HEAD
       <ul class="navbar-nav flex-row align-items-center ms-auto">
 
 
@@ -183,34 +171,6 @@
     </li>
     <!--/ Switch Roles -->
 @endif
-=======
-
-
-      <ul class="navbar-nav flex-row align-items-center ms-auto">
-
-
-        <!-- Language -->
-        <li class="nav-item dropdown-language dropdown">
-          <a class="nav-link btn btn-text-secondary btn-icon rounded-pill dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-            <i class='ti ti-language rounded-circle ti-md'></i>
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <a class="dropdown-item" href="javascript:void(0);" data-language="en" data-text-direction="ltr">
-                <span>English</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="javascript:void(0);" data-language="fr" data-text-direction="ltr">
-                <span>French</span>
-              </a>
-            </li>
-
-
-          </ul>
-        </li>
-        <!--/ Language -->
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 
         <!-- Quick links  -->
         <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown">
@@ -322,11 +282,7 @@
                   <div class="d-flex">
                     <div class="flex-shrink-0 me-3">
                       <div class="avatar">
-<<<<<<< HEAD
                         <img alt class="rounded-circle">
-=======
-                        <img src="../../assets/img/avatars/6.png" alt class="rounded-circle">
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                       </div>
                     </div>
                     <div class="flex-grow-1">
@@ -446,8 +402,4 @@
 
 </nav>
 
-<<<<<<< HEAD
 <!-- / Navbar -->
-=======
-<!-- / Navbar -->
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa

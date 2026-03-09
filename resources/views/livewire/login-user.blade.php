@@ -28,11 +28,7 @@
 
                <div class="mb-6">
                    <label for="email" class="form-label">Username | Email<strong style="color: red">* </strong></label>
-<<<<<<< HEAD
                    <input wire:model='email' type="text" class="form-control" id="email" placeholder="Email will serve as username" autofocus>
-=======
-                   <input wire:model='email' type="text" class="form-control" id="email" placeholder="Emailwill serve as username" autofocus>
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                  </div>
                <div class="mb-6 form-password-toggle">
                  <label class="form-label" for="password">Enter Password</label>

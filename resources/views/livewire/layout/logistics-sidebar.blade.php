@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 v<!-- Menu -->
-=======
-<!-- Menu -->
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
 

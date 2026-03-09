@@ -29,14 +29,11 @@
                             </span>
                         </div>
                     </div>
-<<<<<<< HEAD
                     </br>
                     <p>
                      <a href="{{ route('occupancy-list') }}" target="_blank" class="btn btn-primary"> Print Occupancy List
             </a>
             </p>
-=======
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                     <div class="hero-decoration">
                         <div class="floating-shape shape-1"></div>
                         <div class="floating-shape shape-2"></div>

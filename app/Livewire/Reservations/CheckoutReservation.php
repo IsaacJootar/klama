@@ -4,11 +4,8 @@ namespace App\Livewire\Reservations;
 
 use Livewire\Component;
 use App\Models\Reservation;
-<<<<<<< HEAD
 use App\Models\Bank;
 use App\Models\SalesCoupon;
-=======
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 use App\Services\EmailMessageService;
 use App\Models\Roomallocation;
 use App\Http\Helpers\Helper;
@@ -37,17 +34,9 @@ class CheckoutReservation extends Component
     public function mount()
     {
         $this->reservation = Reservation::where('reservation_id', $this->reservation_id)->first();
-<<<<<<< HEAD
         $this->rooms = DB::table('resv_reservations')
             ->join('resv_rooms', 'resv_reservations.room_id', '=', 'resv_rooms.id')
             ->where('reservation_id', $this->reservation_id)
-=======
-
-        //get room(s)
-        $this->rooms = DB::table('resv_reservations')
-            ->join('resv_rooms', 'resv_reservations.room_id', '=', 'resv_rooms.id')
-            ->where('reservation_id', $this->reservation_id) // where cond. is on the first table
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
             ->get();
         $this->category_id = $this->reservation->category_id;
         $this->checkin = $this->reservation->checkin;
@@ -128,7 +117,6 @@ class CheckoutReservation extends Component
                 'checkout' => '1986-09-01',
             ]);
 
-<<<<<<< HEAD
         Reservation::where('reservation_id', $reservation_id)
             ->update([
                 'payment_status' => 'Checkedout',
@@ -137,26 +125,6 @@ class CheckoutReservation extends Component
         toastr()->info('Customer Has Been Checked Out Successfully');
         return to_route('reserved-rooms');
     }
-=======
-}
-
-
-public function comfirmPayment($reservation_id, $email){// for front desk
-
-    Reservation::where('reservation_id', $reservation_id)
-            ->update([
-                'payment_status'=>'Paid',
-                ]); // this wil comfirm for all rooms under that reservation group
-
-                // sent comfirmation Email
-        $subject =  'Reservation  Comfirmed';
-        $message =  'Your Reservation has been comfirm.  ID:'.$reservation_id;
-        $sendmail = app(abstract: EmailMessageService::class); // inject the dependency class
-        $sendmail ->ComfirmReservationEmail($message, $email,  $subject);
-
-            toastr()->info('Customer Reservation Has Been Comfirmed');
-    return to_route ('reserved-rooms');
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 
     public function comfirmPayment($reservation_id, $email)
     {

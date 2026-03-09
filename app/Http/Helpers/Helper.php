@@ -1,6 +1,6 @@
-<<<<<<< HEAD
-=======
 <?php
+
+namespace App\Http\Helpers;
 
 use Carbon\Carbon;
 
@@ -89,4 +89,7 @@ class Helper
             :      "<span class='badge bg-label-warning me-1'>No</span>";
     }
 }
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
+
+if (!class_exists('Helper', false)) {
+    class_alias(Helper::class, 'Helper');
+}

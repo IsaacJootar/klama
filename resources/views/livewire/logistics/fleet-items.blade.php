@@ -76,21 +76,11 @@
                     <h4 class="mb-2"><x-home-page-label>{{ $modal_title }}</x-home-page-label></h4>
                 </div>
 
-<<<<<<< HEAD
                 <form onsubmit="return false">
                     @csrf
                     <div class="col-12">
                         <label for="selectCat" class="form-label">Item Category</label>
                         <select wire:model="category" class="form-select form-select-lg">
-=======
-              <h4 class="mb-2"><x-home-page-label>{{$modal_title}}</x-home-page-label></h4>
-            </div>
-              <div class="col-12">
-
-                <label for="selectCat" class="form-label">Item Category</label>
-                        <select wire:model="category" class="form-select form-select-lg"
-                            data-allow-clear="true">
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                             <option value="">--Select Fleet Category--</option>
                             <option value="truck">Truck </option>
                             <option value="car">Car </option>

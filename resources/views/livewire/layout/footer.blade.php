@@ -20,14 +20,8 @@
               echo date('Y');
           @endphp . built with ❤️ by <a href="https://klickitsystems.com/" target="_blank" class="footer-link">KlickitSystems</a>➡️
           <a href="#" class="footer-link me-4"
-<<<<<<< HEAD
             target="_blank">License</a>
           <a href="#" target="_blank" class="footer-link me-4">Reservation</a>
-=======
-            target="_blank">License</a>➡️
-          <a href="#" target="_blank" class="footer-link me-4">More
-            Themes</a>➡️
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 
           <a href="#" target="_blank"
             class="footer-link me-4">Documentation</a>➡️

@@ -14,11 +14,7 @@
         <div class="card">
 <div class="table-responsive text-nowrap">
 
-<<<<<<< HEAD
     <table id="myTable" class="table">
-=======
-    <table class="table">
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
       <thead class="table-light">
 
                         <tr>
@@ -67,11 +63,7 @@
                 <option value="FrontDesk_Reservations">FD (FrontF Desk | Reservations Officer) </option>
                 <option value="Maintenance">MM (Maintenance ) </option>
                 <option value="Logistics">LM (Logistics Manager | Supervisior) </option>
-<<<<<<< HEAD
                 <option value="Kitchen_And_Restaurant">KR (kitchen /Restaurant Manager | Supervisior) </option>
-=======
-                <option value="Kitchen_Restaurant">KR (kitchen /Restaurant Manager | Supervisior) </option>
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
                 <option value="Room_HouseKeeping">HK (Room / House Keeping Manager | Supervisior) </option>
                 <option value="Sales_Marketing">SM (Sale / Promo Manager | Supervisior) </option>
                 <option value="Accounts_payroll">AP (Accounts / Payroll Manager | Supervisior) </option>

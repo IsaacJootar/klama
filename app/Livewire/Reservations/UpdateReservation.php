@@ -87,17 +87,10 @@ class UpdateReservation extends Component
             ->limit($this->nor)->get();
             Reservation::where('reservation_id', $this->reservation_id)->delete();
 
-<<<<<<< HEAD
       $this->reservation_id = mt_rand(10000000, 99999999);
         $user = Auth::user()->id;
 //  the total amount on this room (s) will be store on each room instnace , but nor on reservation group- just for record, even if the reservation is in a group (thats more than one room in the reservation ID),
         foreach ($this->allocations as $this->allocation) {
-=======
-        $this->reservation_id = mt_rand(10000000, 99999999); // generate a new reservation ID, just for convinience
-
-        foreach ($this->allocations as $this->allocation):
-
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
             Reservation::create([
                 'user_id' => $user,
                 'category_id' => $this->category_id,

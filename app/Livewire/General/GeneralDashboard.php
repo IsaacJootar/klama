@@ -3,7 +3,6 @@
 namespace App\Livewire\General;
 
 use Livewire\Component;
-<<<<<<< HEAD
 use App\Models\Room;
 use App\Models\KitchenStoreItems;
 use App\Models\Roomcategory;
@@ -233,18 +232,8 @@ class GeneralDashboard extends Component
             });
     }
 
-=======
-use Livewire\Attributes\Title;
-#[Title('GM-DASHBOARD')]
-class GeneralDashboard extends Component
-{
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
     public function render()
     {
         return view('livewire.general.general-dashboard')->layout('layouts.general');
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa

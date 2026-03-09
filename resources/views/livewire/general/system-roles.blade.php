@@ -14,11 +14,7 @@
         <div class="card">
 <div class="table-responsive text-nowrap">
 
-<<<<<<< HEAD
     <table id="myTable" class="table">
-=======
-    <table class="table">
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
       <thead class="table-light">
 
                         <tr>

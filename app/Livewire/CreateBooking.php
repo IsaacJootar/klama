@@ -4,10 +4,6 @@ namespace App\Livewire;
 use App\Http\Helpers\Helper;
 use Livewire\Component;
 use App\Models\Reservation;
-<<<<<<< HEAD
-=======
-use App\Services\EmailMessageService;
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
 use App\Models\Roomallocation;
 use Livewire\Attributes\Title;
 use Illuminate\Support\Facades\Auth;
@@ -126,14 +122,7 @@ class CreateBooking extends Component
 
         endforeach;
         //dd($this->reservation_id);;
-<<<<<<< HEAD
 
-=======
-        $subject = 'Reservation Comfirmed';
-        $message = 'Your Reservation has been comfirm. ID: ' . $this->reservation_id;
-        $sendmail = app(EmailMessageService::class);
-        $sendmail->ComfirmReservationEmail($message, $this->email, $subject);
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
         return to_route('checkout-booking', ['reservation_id' => $this->reservation_id,]);
     }
 }

@@ -107,14 +107,7 @@ class CreateReservation extends Component
                 ->update(['checkin' => $this->checkin, 'checkout' => $this->checkout]);
         }
 
-<<<<<<< HEAD
         return to_route('checkout-reservation', ['reservation_id' => $this->reservation_id]);
-=======
-        endforeach;
-        //dd($this->reservation_id);;
-
-        return to_route('checkout-reservation', ['reservation_id' => $this->reservation_id,]);
->>>>>>> af17489a4476af6b8ac0e130fbe8c70cf0876cfa
     }
 
 
