@@ -47,8 +47,18 @@ class User extends Authenticatable
     }
 
 
+/*
     public function maintenanceRequests()
     {
         return $this->hasMany(MaintenanceRequest::class, 'assigned_to');
     }
+        */
+
+        public function userRoles()
+        {
+            return $this->hasOne(UserRoles::class, 'user_id', 'id');
+        }
+
+
+
 }

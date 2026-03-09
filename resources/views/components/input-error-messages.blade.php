@@ -1,15 +1,7 @@
-
-<!-- Errors Message from session -->
- @if ($errors->any())
-    <br>
-        @foreach ($errors->all() as $error)
-                @php
-                     toastr()->warning($error) // pass error(s) to the toastr Library
-                @endphp
-
-
-        @endforeach
-
-
+@if ($errors->any())
+    @php
+        // Combine all errors into a single string and deliver to toastr library
+        $errorMessages = implode('<br>', $errors->all());
+        toastr()->warning($errorMessages); // Pass all errors at once
+    @endphp
 @endif
-

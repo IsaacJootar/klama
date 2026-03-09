@@ -2,8 +2,8 @@
     <x-input-error-messages/>
 
     <hr class="my-2">
-    <form>
-     @csrf
+   
+  
     <!-- Add New Room Modal -->
     <div  wire:ignore.self class="modal fade" id="roomAllocationModal" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered1 modal-simple modal-add-new-cc">
@@ -14,10 +14,10 @@
 
               <h4 class="mb-2"><x-home-page-label>{{$modal_title}}</x-home-page-label></h4>
             </div>
-
-
+  <form onSubmit="return false">
+   @csrf
             <label for="selectRoom" class="form-label">Select Room</label>
-                <select wire:model="room_id"  class="select2 form-select form-select-lg" data-allow-clear="true">
+                <select wire:model="room_id"  class="form-select form-select-lg" data-allow-clear="true">
                     <option value="">--Select Room--</option>
                     @foreach ($rooms as $room)
 
@@ -26,7 +26,7 @@
                   </select><br>
 
                 <label for="selectCat" class="form-label">Select Room Category</label>
-                <select wire:model="category_id" class="select2 form-select form-select-lg" data-allow-clear="true">
+                <select wire:model="category_id" class="form-select form-select-lg" data-allow-clear="true">
                     <option value="">--Select Room--</option>
                     @foreach ($categories as $category)
 

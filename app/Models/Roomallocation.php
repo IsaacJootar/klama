@@ -9,10 +9,17 @@ class Roomallocation extends Model
     protected $table="resv_room_allocations";
 
     Protected $guarded=[];   // disable mass asignment issue
+    
+    
 
-    public function category() : BelongsTo{
+    public function room()
+    {
+        return $this->belongsTo(Room::class, 'room_id');
+    }
 
-        return $this->belongsTo(Roomcategory::class, 'category_id','id'); // relation is where cat_id  in  Roomallocation = id in Roomcategory
+    public function category()
+    {
+        return $this->belongsTo(Roomcategory::class, 'category_id');
     }
 
 }

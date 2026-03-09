@@ -4,13 +4,10 @@ namespace App\Livewire\Reservations;
 
 use Livewire\Component;
 use Carbon\Carbon;
-use App\Models\Room;
 use App\Models\Reservation;
-use App\Models\Roomcategory;
-use App\Models\Roomallocation;
 use Livewire\Attributes\Title;
 
-#[Title('Reservations | Filter Due Roooms')]
+#[Title('Reservations | Filter Due Rooms')]
 class FilterDueRooms extends Component
 {
 
@@ -55,7 +52,7 @@ class FilterDueRooms extends Component
                 $this->dispatch('refresh-filter-due-rooms', $this->next, $this->next);
                 break;
             case 'three':
-                $this->three = Carbon::now()->addDays(4)->timezone('Africa/Lagos')->format('Y-m-d');
+                $this->three = Carbon::now()->addDays(3)->timezone('Africa/Lagos')->format('Y-m-d');
                 $this->reservations = Reservation::whereBetween('checkout', [$this->three, $this->three])
                     ->Where('payment_status', '!=',  'Checkedout')
                     ->orderBy("id", "desc")->get();

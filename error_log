@@ -1,0 +1,404 @@
+[11-Feb-2025 02:57:34 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Logistics\FleetItems::exit() in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Logistics/FleetItems.php on line 75
+[11-Feb-2025 06:48:48 UTC] PHP Fatal error:  Cannot use App\Livewire\Fnb\Dashboard as Dashboard because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/routes/web.php on line 35
+[04-Mar-2025 23:53:25 UTC] PHP Fatal error:  Cannot use App\Livewire\RoomSearch as RoomSearch because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/routes/web.php on line 76
+[04-Mar-2025 23:55:33 UTC] PHP Fatal error:  Cannot use App\Livewire\RoomSearch as RoomSearch because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/routes/web.php on line 76
+[04-Mar-2025 23:58:14 UTC] PHP Fatal error:  Cannot use App\Livewire\RoomSearch as RoomSearch because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/routes/web.php on line 76
+[04-Mar-2025 23:58:25 UTC] PHP Fatal error:  Cannot use App\Livewire\RoomSearch as RoomSearch because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/routes/web.php on line 76
+[05-Mar-2025 00:00:12 UTC] PHP Fatal error:  Cannot use App\Livewire\RoomSearch as RoomSearch because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/routes/web.php on line 76
+[14-Mar-2025 05:16:16 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\General\GeneralDashboard::render() in /home/vinelhie/reservations.vinehousegroup.com/app/Livewire/General/GeneralDashboard.php on line 56
+[14-Mar-2025 05:17:04 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\General\GeneralDashboard::render() in /home/vinelhie/reservations.vinehousegroup.com/app/Livewire/General/GeneralDashboard.php on line 56
+[14-Mar-2025 05:19:15 UTC] PHP Fatal error:  Cannot declare class App\Livewire\General\GeneralDashboard, because the name is already in use in /home/vinelhie/reservations.vinehousegroup.com/app/Livewire/General/DirectorDashboard.php on line 11
+[15-Mar-2025 07:42:15 UTC] PHP Fatal error:  Trait "Spatie\LivewireFilepond\WithFilePond" not found in /home/vinelhie/reservations.vinehousegroup.com/app/Livewire/Reservations/CreateRoomCategory.php on line 17
+[28-Mar-2025 00:36:24 UTC] PHP Fatal error:  Cannot use Livewire\Component as Component because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/General/BankDetail.php on line 7
+[29-Mar-2025 07:42:51 UTC] PHP Fatal error:  Cannot declare class Helper, because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Http/Helpers/Helper.php on line 7
+[29-Mar-2025 07:46:51 UTC] PHP Fatal error:  Cannot declare class Helper, because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Http/Helpers/Helper.php on line 7
+[29-Mar-2025 07:47:24 UTC] PHP Fatal error:  Cannot declare class Helper, because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Http/Helpers/Helper.php on line 7
+[29-Mar-2025 09:35:09 UTC] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 266240 bytes) in /home/vinelhie/hotelis.vinehousegroup.com/vendor/laravel/framework/src/Illuminate/Collections/helpers.php on line 219
+[29-Mar-2025 10:30:44 UTC] PHP Fatal error:  Cannot declare class App\Livewire\RoomSearch, because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Search.php on line 12
+[29-Mar-2025 10:31:59 UTC] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 266240 bytes) in /home/vinelhie/hotelis.vinehousegroup.com/vendor/laravel/framework/src/Illuminate/Collections/helpers.php on line 219
+[29-Mar-2025 15:29:50 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$rooms in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 21
+[29-Mar-2025 15:30:26 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$categories in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 21
+[29-Mar-2025 15:30:32 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$categories in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 21
+[31-Mar-2025 05:39:52 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$reservation_id in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 33
+[10-Apr-2025 17:47:08 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$checkin in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 27
+[10-Apr-2025 17:48:07 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$checkout in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 27
+[21-Apr-2025 12:52:44 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbExpenseItem.php on line 4
+[21-Apr-2025 12:53:41 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbExpenseItem.php on line 4
+[21-Apr-2025 13:27:41 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbExpenseCategory.php on line 5
+[21-Apr-2025 14:53:59 UTC] PHP Fatal error:  Cannot declare class App\Livewire\Fnb\FnbMakeExpense because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 11
+[21-Apr-2025 14:54:36 UTC] PHP Fatal error:  Cannot declare class App\Livewire\Fnb\FnbMakeExpense because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 11
+[21-Apr-2025 14:58:38 UTC] PHP Fatal error:  Cannot declare class App\Livewire\Fnb\FnbMakeExpense because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 11
+[21-Apr-2025 16:36:12 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Fnb\FnbMakeExpense::$item_id in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 23
+[21-Apr-2025 16:36:42 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Fnb\FnbMakeExpense::$expense_id in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 28
+[22-Apr-2025 10:27:23 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Fnb\FnbMakeExpense::$expense_code in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 22
+[22-Apr-2025 13:56:40 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Logistics/SystemMessages.php on line 3
+[22-Apr-2025 13:56:49 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Logistics/SystemMessages.php on line 3
+[22-Apr-2025 13:57:14 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Logistics/SystemMessages.php on line 3
+[23-Apr-2025 11:57:50 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Fnb\FnbMakeExpense::removeExpense() in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 142
+[23-Apr-2025 12:02:17 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Fnb\FnbMakeExpense::removeExpense() in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/FnbMakeExpense.php on line 142
+[24-Apr-2025 01:34:23 UTC] PHP Fatal error:  Cannot declare class DashboardHelper, because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Http/Helpers/DashboardHelper.php on line 6
+[24-Apr-2025 01:44:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:44:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:44:34 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:44:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:44:55 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:44:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:45:08 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:45:08 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:49:40 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:49:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:54:47 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:54:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:54:56 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:54:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:58:16 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:58:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:10 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:12 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:13 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:15 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 01:59:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:06 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:17 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:19 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:24 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:28 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:29 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:00:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:01:00 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:01:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:02:05 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:02:05 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:07:38 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:07:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:07:39 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:07:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:09:46 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:09:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:21:33 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:21:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:21:36 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:21:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:34 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:35 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:24:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:23 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:47 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:52 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:59 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:26:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:27:00 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:27:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:27:02 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:27:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/index.php(13): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:28:33 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:28:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:28:44 UTC] PHP Warning:  require(/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php): Failed to open stream: No such file or directory in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 02:28:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/../../app/Http/Helpers/DashboardHelper.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php(45): {closure}()
+#1 /home/vinelhie/hotelis.vinehousegroup.com/vendor/autoload.php(25): ComposerAutoloaderInit589cc0f65c3aaa7d4e9024d545bc1974::getLoader()
+#2 /home/vinelhie/hotelis.vinehousegroup.com/artisan(9): require('/home/vinelhie/...')
+#3 {main}
+  thrown in /home/vinelhie/hotelis.vinehousegroup.com/vendor/composer/autoload_real.php on line 41
+[24-Apr-2025 05:44:09 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/CreateReservation.php on line 4
+[09-May-2025 13:54:02 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Maintenance\Schedules::$asset_id in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Maintenance/Schedules.php on line 20
+[25-May-2025 14:23:45 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\CreateReservation::$selectedRooms in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/CreateReservation.php on line 106
+[29-May-2025 17:44:13 UTC] PHP Fatal error:  Cannot use Livewire\Component as Component because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/Order.php on line 11
+[31-May-2025 14:29:02 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Fnb\Order::mount() in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/Order.php on line 53
+[01-Jun-2025 14:24:05 UTC] PHP Fatal error:  Cannot declare class App\Livewire\Kitchen\KitchenStoreItem because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/KitchenStoreItem.php on line 11
+[01-Jun-2025 14:25:58 UTC] PHP Fatal error:  Cannot declare class App\Livewire\Kitchen\KitchenStoreItem because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/KitchenStoreItem.php on line 11
+[01-Jun-2025 14:26:40 UTC] PHP Fatal error:  Cannot declare class App\Livewire\Fnb\KitchenStoreItem because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/KitchenStoreItem.php on line 11
+[02-Jun-2025 18:49:21 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Fnb/Order.php on line 4
+[04-Jul-2025 18:09:51 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::printReceipt() in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 170
+[05-Jul-2025 09:19:08 UTC] PHP Fatal error:  Cannot redeclare App\Livewire\Reservations\ReservedRooms::$room_extend in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Reservations/ReservedRooms.php on line 54
+[08-Jul-2025 16:47:43 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home/vinelhie/hotelis.vinehousegroup.com/app/Livewire/Logistics/ActivityLog.php on line 4
+[10-Jul-2025 15:22:13 UTC] PHP Fatal error:  Cannot use App\Http\Helpers\Helper as Helper because the name is already in use in /home/vinelhie/hotelis.vinehousegroup.com/storage/framework/views/96cf6b11a4ebdea9753e857fddc7e0f5.php on line 9

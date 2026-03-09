@@ -23,11 +23,17 @@ class AvailableRooms extends Component
 
         $this->checkin = Carbon::now()->timezone('Africa/Lagos')->format('Y-m-d');
         $this->checkout = Carbon::now()->timezone('Africa/Lagos')->addDays(1)->format('Y-m-d'); //working with dates sucks
-        $this->availables = Roomallocation::with('category')
-            ->whereDate('checkin', '>',  $this->checkin)
-            ->whereDate('checkout', '>', $this->checkout)
-            ->orWhere('checkin', '=',  '1986-09-01') // my weird date-default for just created rooms
-            ->orderBy('id', 'desc')->get();
+        
+ $this->availables = Roomallocation::with('category')
+    ->where(function ($query) {
+        $query->whereDate('checkin', '>', $this->checkin)
+              ->whereDate('checkout', '>', $this->checkout)
+              ->orWhere('checkin', '=', '1986-09-01');
+    })
+    ->where('status', 'Available')
+    ->orderBy('id', 'desc')
+    ->get();
+
         $this->rooms = Room::query()->orderBy("id", "desc")->get();
         $this->categories = Roomcategory::query()->orderBy("id", "desc")->get();
 

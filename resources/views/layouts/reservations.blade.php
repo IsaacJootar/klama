@@ -41,16 +41,23 @@
 
           <!-- flatpickr CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/libs/flatpickr/flatpickr.css') }}" />
+    <link rel="stylesheet" href="../../assets/vendor/libs/spinkit/spinkit.css" />
 
 
         <!-- Page CSS -->
         <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/cards-advance.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendor/libs/select2/select2.css') }}" />
         <link rel="stylesheet" href="{{ asset('assets/vendor/libs/bootstrap-select/bootstrap-select.css') }}" />
+            <!-- Page CSS -->
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+        <!-- Cdn Files for datatables Starts  -->
+        <link href="https://cdn.datatables.net/v/bs5/jszip-3.10.1/dt-2.2.2/b-3.2.2/b-html5-3.2.2/b-print-3.2.2/r-3.0.4/datatables.min.css" rel="stylesheet" integrity="sha384-Lyca+jsk9Q+XLYmuTBriITsVJpOxGXNqWAWFFT5SdYRiDsUSGoaekwOTIO9kgfem" crossorigin="anonymous">
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js" integrity="sha384-VFQrHzqBh5qiJIU0uGU5CIW3+OWpdGGJM9LBnGbuIH2mkICcFZ7lPd/AAtI7SNf7" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js" integrity="sha384-/RlQG9uf0M2vcTw3CX7fbqgbj/h8wKxw7C3zu9/GxcBPRKOEcESxaxufwRXqzq6n" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/v/bs5/jszip-3.10.1/dt-2.2.2/b-3.2.2/b-html5-3.2.2/b-print-3.2.2/r-3.0.4/datatables.min.js" integrity="sha384-/wsDbsz8pRfwq3zQ5D36rGcm7HGUCCg0WxzK0y3yxeRsF7+PKBoPEorAVw441sbW" crossorigin="anonymous"></script>
+
+       <!-- Cdn Files for datatables Ends -->
         <!-- Helpers -->
         <script src="{{ asset('assets/vendor/js/helpers.js') }}"></script>
 
@@ -62,6 +69,8 @@
         @endphp
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         @livewireStyles
+        @filepondScripts
+
     </head>
     <body>
         <!-- Layout wrapper -->
@@ -70,7 +79,7 @@
                 <livewire:layout.reservations-sidebar />
                 <!-- Layout container -->
                 <div class="layout-page">
-                    <livewire:layout.reservations-navbar />
+                    <livewire:layout.navbar />
 
                     <!-- Content wrapper -->
                     <div class="content-wrapper">
@@ -78,8 +87,6 @@
 
 
                         {{ $slot }}
-
-                        <livewire:layout.reservations-footer />
 
                         <div class="content-backdrop fade"></div>
                     </div>
@@ -167,5 +174,17 @@
     <!-- Page JS -->
     <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
     @livewireScripts
+     <!-- JS  for datatables Starts  -->
+    <script>
+        new DataTable('#myTable', {
+            layout: {
+                topStart: {
+                    buttons: ['copyHtml5', 'excelHtml5', 'csvHtml5', 'pdfHtml5']
+                }
+            }
+        });
+
+        </script>
+             <!-- JS  for datatables Ends -->
 </body>
 </html>

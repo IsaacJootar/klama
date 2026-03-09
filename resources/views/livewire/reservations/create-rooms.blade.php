@@ -2,7 +2,7 @@
     <x-input-error-messages/>
 
 <hr class="my-2">
-<form>
+
 @csrf
 <!-- Add New Room Modal -->
 <div  wire:ignore.self  class="modal fade" data-bs-focus="false" id="createRoom" tabindex="-1" aria-hidden="true">
@@ -24,6 +24,8 @@
 
 
             <br>
+             <form wire:submit.prevent="store">
+                 @csrf
           <div class="col-12 text-center">
 
          @if ($modal_flag) <!-- if flag is TRUE, display update action  button -->
@@ -31,7 +33,7 @@
             <button wire:click='exit' type="button" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
             <x-app-loader/>
         @else
-            <button wire:click='store' type="button" class="btn btn-primary">Create</button>
+            <button type="submit" class="btn btn-primary">Create</button>
             <button wire:click='exit' type="button" class="btn btn-label-secondary btn-reset" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
            <x-app-loader/>
         @endif

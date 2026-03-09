@@ -13,7 +13,7 @@
         <div class="card">
 <div class="table-responsive text-nowrap">
 
-    <table class="table">
+   <table id="myTable" class="table">
       <thead class="table-light">
 
                         <tr>
@@ -62,7 +62,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered modal-simple modal-upgrade-plan">
       <div class="modal-content">
         <div class="modal-body">
-            <button wire:click='exit' type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button  type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
           <div class="text-center">
             <h4 class="mb-2"><x-home-page-label>Send  Report</x-home-page-label></h4>

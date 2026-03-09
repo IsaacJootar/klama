@@ -10,7 +10,7 @@
 
     </head>
     <body class="antialiased font-sans">
-        {{$subject}}
-message:    {{$mail_message}}
+subject: {{$mail_subject}}
+message: {{$mail_message}}
     </body>
 </html>

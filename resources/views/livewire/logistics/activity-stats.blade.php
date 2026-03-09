@@ -3,7 +3,8 @@
         <div class="content-wrapper">
             @php
              use Carbon\Carbon;
-            $date = Carbon::now()->timezone('Africa/Lagos')->format('Y-m-d');
+            {{$date = Carbon::now()->timezone('Africa/Lagos')->format('Y-m-d');}}
+
             $section = 'Logistics';
             @endphp
             <!-- Content -->
@@ -37,9 +38,7 @@
                                         <span class="avatar-initial rounded bg-label-warning"><i
                                                 class='ti ti-plane ti-28px'></i></span>
                                     </div>
-                                    <h4 class="mb-0">{{\App\Models\Report::where('date', $date)
-                                        ->where('section', $section)
-                                        ->get()->value('airport_pickups')}}</h4>
+                                    <h4 class="mb-0">{{\App\Models\Report::where('date', $date)->get()->value('airport_pickups')}}</h4>
                                 </div>
                                 <p class="mb-1">Airport PickUps</p>
                                 <p class="mb-0">

@@ -67,27 +67,6 @@
                             <div class="bs-stepper-content">
                                 <form onSubmit="return false">
                                     @csrf
-                                    @if ($image)
-                                        <div class="col-md">
-                                            <div class="card">
-                                                <div class="row g-0">
-                                                    <div class="col-md-4">
-                                                        <img src="{{ $image->temporaryUrl() }}" class="card-img-top"
-                                                            alt="Category image " />
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="card-body">
-                                                            <h5 class="card-title">Uploaded File</h5>
-                                                            <p class="card-text">
-                                                               You can select a new file and reupload again should you fine this image not good enough or not the image you were trying to select
-                                                            </p>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endif
 
                                     <!-- Category Details -->
 
@@ -228,17 +207,14 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
                                     <!-- Social Links -->
                                     <div id="social-links-vertical-modern" class="content">
                                         <div class="content-header mb-4">
-                                            <div
-                                                class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
-                                                <label for="formFile" class="form-label">Image should be clear and
-                                                    catchy, not more than 10MB</label>
-                                                <input required wire:model="image" class="form-control form-control-lg" type="file"
-                                                    id="formFile">
-
-                                            </div>
+                                            <div class="mb-4">
+                                                <label for="formFileMultiple" class="form-label">You can upload Multiple files at once if necessary</label>
+                                                <x-filepond::upload wire:model="files" multiple />
+                                              </div>
                                         </div>
                                         <div class="row g-6">
 

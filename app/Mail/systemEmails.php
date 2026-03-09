@@ -15,15 +15,15 @@ class systemEmails extends Mailable
     use Queueable, SerializesModels;
 
     public $mail_message;
-    public $subject = 'Hotelis System Emails'; // create email subject field in the view later,mails need a subject
+    public $mail_subject; // create email subject field in the view later,mails need a subject
 
     /**
      * Create a new message instance.
      */
-    public function __construct($mail_message)
+    public function __construct($mail_message, $mail_subject, )
     {
         $this->mail_message = $mail_message;
-        $this->subject;
+        $this->mail_subject = $mail_subject;
     }
 
     /**
@@ -32,8 +32,8 @@ class systemEmails extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address('vinegroup@gmail.com', 'John Doe'),  // mail and name of sender
-            subject: $this->subject,
+            from: new Address('vinegrouphouse@gmail.com', 'VineGroupHouse'),  // mail and name of sender
+            subject: $this->mail_subject,
         );
     }
 

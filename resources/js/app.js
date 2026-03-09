@@ -1,3 +1,3 @@
-import './bootstrap';
+import './bootstrap'; // Default Laravel Bootstrap
 
-// other app stuff...
+

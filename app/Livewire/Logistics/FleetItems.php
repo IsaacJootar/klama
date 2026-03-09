@@ -34,7 +34,12 @@ class FleetItems extends Component
 
     public function save()
     {
+        
+        try {
        $this->validate();// validate and then save
+    } catch (ValidationException $e) {
+         $this->reset();
+    }
         Fleet::updateOrCreate(
         ['id' =>$this->fleet_id],
             [
@@ -46,6 +51,7 @@ class FleetItems extends Component
         );
 
         toastr()->info($this->fleet_id ? 'Fleet Item Has Been Added Successfuly' : 'Fleet Item Has Been Updated Successfuly' );
+        //$this->dispatch('fleet-saved');
         $this->reset();
     }
     public function edit($id)

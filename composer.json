@@ -12,6 +12,7 @@
         "livewire/volt": "^1.0",
         "php-flasher/flasher-toastr-laravel": "^2.1",
         "spatie/image": "^3.7",
+        "spatie/livewire-filepond": "^1.4",
         "unicodeveloper/laravel-paystack": "^1.2"
     },
     "require-dev": {
@@ -29,7 +30,11 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        
+        "files": [
+            "app/Http/Helpers/Helper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -37,7 +42,7 @@
         },
 
         "files": [
-            "App/Http/Helpers/Helper.php"
+            "app/Http/Helpers/Helper.php"
         ]
     },
     "scripts": {

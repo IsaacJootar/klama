@@ -1,14 +1,15 @@
 <?php
-
 namespace App\Livewire\Logistics;
-
 use App\Models\Report;
 use Livewire\Component;
 use Illuminate\Support\Carbon;
 use Livewire\Attributes\Title;
+use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Validate;
 use App\Services\ReportFilesService;
 use Spatie\LivewireFilepond\WithFilePond;
+use Illuminate\Support\Facades\DB;
+
 
 #[Title('Logistics | Reports')]
 class Reports extends Component
@@ -18,9 +19,9 @@ class Reports extends Component
     public  $reports; // report instance
 
     public $report;
-    public $sent_by = '12345';
+    public $sent_by = '';
     public $sent_to;
-    public $user_id = '12345'; // hardcode User ID for now til Auth Module is  ready
+    public $user_id = ''; 
 
     public $report_id; // give me a random numberto identify each report
 
@@ -56,6 +57,13 @@ class Reports extends Component
         //$this->report_id = substr(   $this->report_id, -5);
 
 
+        
+
+    // Get the user ID of the General Manager
+        $this->sent_to = DB::table('user_roles')
+        ->where('role', 'General_Manager')
+        ->value('user_id');
+
 
         Report::updateOrCreate(
             ['id' => $this->report_id],
@@ -67,7 +75,7 @@ class Reports extends Component
                 'breakdowns' => $this->breakdowns,
                 'note' => $this->note,
                 'sent_to' => $this->sent_to,
-                'sent_by' => $this->sent_by,
+                'sent_by' =>  Auth::user()->id, // Auth User ID
                 'date' => Carbon::now()->timezone('Africa/Lagos')->format('Y-m-d'), // create a class later to accomodate other timezones
                 'section' => $this->section,
             ]
@@ -75,10 +83,11 @@ class Reports extends Component
         );
 
         if ($this->files) { // uploading files for daily reports may not be neccessary every day, but if files exist, inject the dependency
-            $report_files_service = app(abstract: ReportFilesService::class); // inject the dependency class
+            $report_files_service = app(ReportFilesService::class); // inject the dependency class
 
+            $this->sent_by = Auth::user()->id;
             foreach ($this->files as $file) {
-                $report_files_service->UploadFilesAndCreateRecord($file, $this->report_id,  $this->sent_by, $this->sent_to, $this->user_id, $this->section);
+                $report_files_service->UploadFilesAndCreateRecord($file, $this->report_id,  $this->sent_by, $this->sent_to, $this->sent_by, $this->section);
             }
 
         }
@@ -104,10 +113,6 @@ class Reports extends Component
         $this->modal_title = 'Update Report';
     }
 */
-    public function exit()
-    { //rest modal feilds
-        $this->reset();
-    }
 
 
     /*

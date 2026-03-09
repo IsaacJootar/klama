@@ -1,4 +1,7 @@
 <div>
+    @php
+    use App\Http\Helpers\Helper;
+@endphp
     <x-input-error-messages/>
     <div class="container-xxl flex-grow-1 container-p-y">
             <!--/ page-label component -->
@@ -11,7 +14,7 @@
         <div class="card">
 <div class="table-responsive text-nowrap">
 
-    <table class="table">
+    <table id="myTable" class="table">
       <thead class="table-light">
 
                         <tr>
@@ -143,10 +146,7 @@
                                     <h4 class="mb-0">{{\App\Models\Report::where('report_id', $report_id)->get()->value('trips_made')}}</h4>
                                 </div>
                                 <p class="mb-1">Trips Made </p>
-                                <p class="mb-0">
-                                    <span class="text-heading fw-medium me-2">+18.2%</span>
-                                    <small class="text-muted">than last week</small>
-                                </p>
+                               
                             </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-center mb-2">
@@ -157,10 +157,7 @@
                                     <h4 class="mb-0">{{\App\Models\Report::where('report_id', $report_id)->get()->value('airport_pickups')}}</h4>
                                 </div>
                                 <p class="mb-1">Airport PickUps</p>
-                                <p class="mb-0">
-                                    <span class="text-heading fw-medium me-2">-8.7%</span>
-                                    <small class="text-muted">than last week</small>
-                                </p>
+                               
                             </div>
 
                             <div class="card-body">
@@ -172,10 +169,7 @@
                                     <h4 class="mb-0">{{\App\Models\Report::where('report_id', $report_id)->get()->value('other')}}</h4>
                                 </div>
                                 <p class="mb-1">Other Errands</p>
-                                <p class="mb-0">
-                                    <span class="text-heading fw-medium me-2">+4.3%</span>
-                                    <small class="text-muted">than last week</small>
-                                </p>
+                                
                             </div>
 
                             <div class="card-body">
@@ -188,10 +182,7 @@
                                     <h4 class="mb-0">{{\App\Models\Report::where('report_id', $report_id)->get()->value('breakdowns')}}</h4>
                                 </div>
                                 <p class="mb-1">Breakdowns</p>
-                                <p class="mb-0">
-                                    <span class="text-heading fw-medium me-2">-2.5%</span>
-                                    <small class="text-muted">than last week</small>
-                                </p>
+                               
                             </div>
 
             </div>
@@ -216,14 +207,14 @@
                 <td>
                         <li>
                             {{  $file->file_name }}
-                            <a href="{{ Storage::url($file->path) }}" download class="ti-ti">
+                            <a href="{{ asset('public'.Storage::url($file->path)) }}" download class="ti-ti">
 
                                 <i class="ti ti-download"></i>   Download File
                             </a>
 
 
                             <a
-                                href="{{ Storage::url($file->path) }}"
+                                href="{{ asset('public'. Storage::url($file->path)) }}"
                                 target="_blank">
                                 <i class="ti ti-eye"></i>{{ $file->name }}      Open File
                             </a>

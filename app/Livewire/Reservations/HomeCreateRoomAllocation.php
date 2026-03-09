@@ -29,7 +29,7 @@ class HomeCreateRoomAllocation extends Component
         $allocations = Roomallocation::findOrFail($id);
         $allocations->delete();
         toastr()->info('Room Allocation is Removed successfully');
-        $this->redirect('/reservations/home-room-allocation');
+        $this->redirect('/reservations/home-create-room-allocation');
     }
 
 

@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('resv_reservations', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->foreignId('room_id');
             $table->foreignId('category_id');
             $table->integer('reservation_id');
@@ -20,7 +21,7 @@ return new class extends Migration
             $table->string('medium');
             $table->string('payment_status')->default('Pending');
             $table->string('fullname');
-            $table->string('address')->nullable();
+            $table->text('address')->nullable();
             $table->string('requests')->nullable();
             $table->string('phone');
             $table->string('email')->nullable();

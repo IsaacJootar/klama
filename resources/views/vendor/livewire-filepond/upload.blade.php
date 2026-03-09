@@ -6,7 +6,7 @@ $isCustomPlaceholder = isset($placeholder);
     'multiple' => false,
     'required' => false,
     'disabled' => false,
-    'placeholder' => __('Drag & Drop your files or <span class="filepond--label-action"> Browse </span>'),
+    'placeholder' => __('Drag & Dropppp your files or <span class="filepond--label-action"> Browse </span>'),
 ])
 
 @php

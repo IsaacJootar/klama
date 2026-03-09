@@ -23,14 +23,13 @@ class CreateRooms extends Component
     public  $modal_flag = false;
 
 
-
-
     public function store()
     {
         $validation = $this->validate();
         Room::create($validation);
         $this->dispatch('refresh-rooms');
         toastr()->info('Room Has Been Added Successfuly');
+
         $this->reset();
     }
 

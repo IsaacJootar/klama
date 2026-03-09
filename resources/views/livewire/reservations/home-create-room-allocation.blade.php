@@ -1,3 +1,6 @@
+@php
+    use App\Http\Helpers\Helper;
+@endphp
 <div>
 
     <div class="container-xxl flex-grow-1 container-p-y">
@@ -13,7 +16,7 @@
         <div class="card">
 
 <div class="table-responsive text-nowrap">
-    <table class="table">
+    <table id="myTable" class="table">
       <thead class="table-light">
 
                         <tr>

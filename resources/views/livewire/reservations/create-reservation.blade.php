@@ -2,9 +2,11 @@
     @php
         use Carbon\Carbon;
     @endphp
-
+@php
+    use App\Http\Helpers\Helper;
+@endphp
     <!-- Content -->
-
+    <x-input-error-messages/>
 
     <div class="container-xxl flex-grow-1 container-p-y">
 
@@ -108,10 +110,15 @@
                         </div>
 
 
-                        <div class="col-sm-6">
-                            <button wire:click='store' class="btn btn-secondary">Comfirm Reservation </button>
-                            <x-app-loader />
-                        </div>
+                        <div class="row">
+    <div class="col-sm-6 text-start">
+        <a href="{{ route('reservations') }}" class="btn btn-primary">Return to Search</a>
+    </div>
+    <div class="col-sm-6 text-end">
+        <button wire:click='store' class="btn btn-secondary">Confirm Reservation</button>
+        <x-app-loader />
+    </div>
+</div>
 
 
 

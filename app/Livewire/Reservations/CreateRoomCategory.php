@@ -2,42 +2,45 @@
 
 namespace App\Livewire\Reservations;
 
-use Livewire\Attributes\Title;
-use Livewire\WithFileUploads;
-use App\Models\RoomCategory;
 use Livewire\Component;
-use Livewire\Attributes\On;
-use Spatie\Image\Image;
-use Spatie\Image\Enums\Fit;
 use Illuminate\Support\Str;
-
+use Livewire\Attributes\On;
+use App\Models\CategoryImage;
+use App\Models\Roomcategory;
+use Illuminate\Support\Carbon;
+use Livewire\Attributes\Title;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\ValidationException;
+use Spatie\LivewireFilepond\WithFilePond;
 #[title('Create Room Category')]
 
-class CreateRoomCategory extends Component
+class CreateRoomcategory extends Component
 {
 
-    use WithFileUploads;
+    use WithFilePond; // FilePond file upload library
     public $room_category;
     public $category = '';
-    public $image;
+    public $files = []; // images
 
     public $details = '';
     public $wifi = '';
 
     public $laundry = '';
     public $lunch = '';
-
+    public $path;
     public $breakfast = '';
 
 
     //public $modal_title = 'Create New Room Category.';
     public  $modal_flag = false;
 
+
     public function store()
     {
+
+
         $validation = $this->validate([
             'category' => ['required', 'min:4', 'unique:resv_room_categories,category'],
-            'image' => ['required', 'image', 'mimes:jpeg,png,jpg,gif,svg,', 'max:10048'], // 10mb
             'details' => ['required', 'min:20'],
             'wifi' => [],
             'laundry' => [],
@@ -46,33 +49,77 @@ class CreateRoomCategory extends Component
 
         ]);
 
-        if ($this->image) {
 
+        $validation['category']  = str::ucfirst($this->category);
 
-            $imageName = $this->image->hashName();
-            $imagePath = storage_path("app/public/category-images"); // path to laravel storage (Not the public)
-            Image::load($this->image->path())
-                ->fit(fit: Fit::FillMax, desiredWidth: 500,  desiredHeight: 500, backgroundColor: '#a3a3c2')
-                ->save($imagePath . '/' . $imageName);
-
-            //$this->image->store('category-images', 'public'); // store in default laravel storage directory
-
-            $validation['image'] = $this->image->hashName(); // get the random name before persisting the database
-
-            $validation['category']  = str::ucfirst($this->category);
-        }
 
         Roomcategory::create($validation);
+
+        // handle the images
+
+        if ($this->files) { // uploading files for daily reports may not be neccessary every day, but if files exist, inject the dependency
+
+            foreach ($this->files as $file) {
+                $this->UploadCategoryImages($file);
+            }
+
+        }
+
+
 
         $this->dispatch('refresh-categories');
         toastr()->info('Room  Category is created successfully');
         $this->reset();
     }
 
+
+    public function UploadCategoryImages($file)
+    {
+
+        // Validation rules for the file property
+        $validator = Validator::make(
+            ['file' => $file], // The input data to validate
+            [
+                'file' => [
+                    'file',
+                    'max:6120', // Max 7MB
+                    'mimes:jpg,jpeg,png,gif',
+                    'mimetypes:image/jpeg,image/png,image/gif'
+
+                ]
+            ]
+        );
+
+        // Check if validation fails and throw an exception
+        if ($validator->fails()) {
+            throw new ValidationException($validator);
+        }
+
+        // if no errors then upload files and return the fuction to create a record in database
+        $this->path = $file->store('category-images', 'public'); // default storage folder for all our room cat. Files
+        return $this->createFileRecord($file);
+    }
+
+
+    private function createFileRecord($file) {
+        $category = Roomcategory::latest()->value('category');
+
+        return CategoryImage::create([
+            'category' => $category,
+            'file_name' => $file->getClientOriginalName(), // real file name
+            'path' => $this->path,
+            'mime_type' => $file->getMimeType(),
+            'size' => $file->getSize(),
+            'random_name' => $file->hashName(), //random system generated name
+            'date' => Carbon::now()->timezone('Africa/Lagos')->format('Y-m-d'), // create a class later to accomodate other timezones
+        ]);
+    }
+
+
     #[On('modal-flag')] // from modal dispatch
     public function edit($id)
     {
-        $this->room_category = RoomCategory::findOrFail($id);
+        $this->room_category = Roomcategory::findOrFail($id);
         $this->category = $this->room_category->category;
         $this->details = $this->room_category->details;
         $this->wifi = $this->room_category->wifi;
@@ -87,7 +134,6 @@ class CreateRoomCategory extends Component
     {
         $validation = $this->validate([
             'category' => ['required', 'min:4'],
-            //'image' => ['image','mimes:jpeg,png,jpg,gif,svg','max:10048'], // dont require image again for update
             'details' => ['required', 'min:20'],
             'wifi' => [],
             'laundry' => [],
@@ -97,45 +143,15 @@ class CreateRoomCategory extends Component
         ]);
 
 
-        if ($this->image) {
-            // If uploaded on update, may not be sometimes
 
-            $imageName = $this->image->hashName();
-            $imagePath = public_path("storage/category-images");
-            Image::load($this->image->path())
-                ->fit(fit: Fit::FillMax, desiredWidth: 500,  desiredHeight: 500, backgroundColor: '#a3a3c2')
-                ->save($imagePath . '/' . $imageName);
-
-            $validation['image'] = $this->image->hashName(); // get the random name before persisting the database
-
-            //$this->image->store('category-images');
-
-            /*
-
-              // find the old file and delete from storage then store the new file
-
-              $old_file = RoomCategory::findOrFail($this->room_category->id);
-              //dd($old_file->image);
-              $filePath = 'room-images/'.$old_file->image;
-
-              // Check if the file exists and delete it
-              if (Storage::exists($filePath)) {
-
-                  Storage::delete($filePath);
-              }
-
-            */
-
-
-
-
-            $this->image->store('category-images', 'public');
-            $validation['image'] = $this->image->hashName();
-        }
-        $update = RoomCategory::findOrFail($this->room_category->id);
+        $update = Roomcategory::findOrFail($this->room_category->id);
         $validation['category']  = str::ucfirst($this->category);
 
         $update->update($validation);
+        
+        CategoryImage::where('category', $this->category)
+                ->update(['category' => $this->category]);
+
 
         $this->dispatch('refresh-categories');
         toastr()->info('Room Categories is Updated successfully');

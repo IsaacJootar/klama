@@ -34,8 +34,8 @@ class PaymentController extends Controller
         }
     }
 
-    // pay later function
-
+    // pay later function(This Option is discontinued)
+/*
      public function pay_later($amount,$reference)
     {
        Reservation::where('reservation_id', $reference)
@@ -57,7 +57,7 @@ $reservation_id= Reservation::where('reservation_id', $reference)->value('reserv
 
     }
 
-
+*/
     /**
      * Obtain Paystack payment information
      * @return void
@@ -71,8 +71,7 @@ $reservation_id= Reservation::where('reservation_id', $reference)->value('reserv
 
     Reservation::where('reservation_id', $paymentdetails['data']['reference'])
                 ->update([
-                    'amount_paid'=> $paymentdetails['data']['amount'] / 100,  //convert paystack default  kobo to naira
-                    'payment_status'=>'Paid',
+                    'payment_status'=>'Paid'
                     ]);
 
    $customer= Reservation::where('reservation_id',$paymentdetails['data']['reference'])->value('fullname');

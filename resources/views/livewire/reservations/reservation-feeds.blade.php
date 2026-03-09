@@ -7,7 +7,9 @@
     <!-- Content -->
 
     <div class="container-xxl flex-grow-1 container-p-y">
-
+ <div>
+            <x-home-page-label>These  are available reservation feeds for today {{Carbon::now()->format('l, jS \ F, Y')}}</x-home-page-label>
+        </div><br>
 
         <div class="row">
             <!-- Reservations Feeds-->
@@ -26,9 +28,9 @@
                                         <div class="timeline-header mb-3" wire:key='{{ $reserve->id }}'>
                                             <h6 class="mb-0">
 
-                                                {{ str::ucfirst(DB::table('room_categories')->where('id', $reserve->category_id)->value('category')) }}
+                                                {{ str::ucfirst(\App\Models\Roomcategory::where('id', $reserve->category_id)->value('category')) }}
                                                 <strong>
-                                                    {{ Str::ucfirst(DB::table('rooms')->where('id', $reserve->room_id)->value('name')) }}</strong>
+                                                    {{ Str::ucfirst(\App\Models\Room::where('id', $reserve->room_id)->value('name')) }}</strong>
                                                     <small class="text-muted"><i class="badge bg-label-success ms-1">  Reserved</i></h6>
                                                     </small>
                                             <small class="text-muted">
@@ -77,9 +79,9 @@
                                         <div class="timeline-header mb-3" wire:key='{{ $checkout->id }}'>
                                             <h6 class="mb-0">
 
-                                                {{ str::ucfirst(DB::table('room_categories')->where('id', $checkout->category_id)->value('category')) }}
+                                                {{ str::ucfirst(\App\Models\Roomcategory::where('id', $checkout->category_id)->value('category')) }}
                                                 <strong>
-                                                    {{ Str::ucfirst(DB::table('rooms')->where('id', $checkout->room_id)->value('name')) }}</strong>
+                                                    {{ Str::ucfirst(\App\Models\Room::where('id', $checkout->room_id)->value('name')) }}</strong>
                                                     <small class="text-muted"><i class="badge bg-label-info ms-1">  Checked Out</i></h6>
                                                     </small>
                                             <small class="text-muted">

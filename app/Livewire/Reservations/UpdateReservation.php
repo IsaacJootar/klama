@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Livewire\Reservations;
-
+use Illuminate\Support\Facades\Auth;
+use App\Http\Helpers\Helper;
 use Livewire\Component;
 use App\Models\Reservation;
 use App\Models\Roomallocation;
@@ -86,15 +87,18 @@ class UpdateReservation extends Component
             ->limit($this->nor)->get();
             Reservation::where('reservation_id', $this->reservation_id)->delete();
 
-            $this->reservation_id = mt_rand(10000000, 99999999); // generate a new reservation ID, just for convinience
-
-        foreach ($this->allocations as $this->allocation):
-
+      $this->reservation_id = mt_rand(10000000, 99999999);
+        $user = Auth::user()->id;
+//  the total amount on this room (s) will be store on each room instnace , but nor on reservation group- just for record, even if the reservation is in a group (thats more than one room in the reservation ID),
+        foreach ($this->allocations as $this->allocation) {
             Reservation::create([
+                'user_id' => $user,
                 'category_id' => $this->category_id,
                 'room_id' => $this->allocation->room_id,
                 'medium' => $this->medium,
                 'nor' => $this->nor,
+                'unit_price' => $this->allocation->price,
+                'total_amount' => Helper::get_total_amount_due_plain($this->checkin, $this->checkout, $this->category_id, 1), // calculate amount on each room only
                 'fullname' => $this->fullname,
                 'address' => $this->address,
                 'requests' => $this->requests,
@@ -103,15 +107,13 @@ class UpdateReservation extends Component
                 'checkin' => $this->checkin,
                 'checkout' => $this->checkout,
                 'reservation_id' => $this->reservation_id,
-
-
+                'status' => 'Open', // default status for reservations
             ]);
 
             Roomallocation::where('room_id', $this->allocation->room_id)
+                ->where('category_id', $this->category_id)
                 ->update(['checkin' => $this->checkin, 'checkout' => $this->checkout]);
-
-        endforeach;
-        //dd($this->reservation_id)
+        }
 
         return to_route('checkout-reservation', ['reservation_id' => $this->reservation_id,]);
     }
